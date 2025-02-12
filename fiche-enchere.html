@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Patricia Bravo">
+    <meta name="description" content="Plateforme d’enchères">
+    <title>Fiche d’enchère - Stampee</title>
+
+    <!-- Typographies Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+    <!-- Navigation secondaire -->
+    <nav class="navigation-secondaire" aria-label="Navigation secondaire">
+        <ul class="menu-secondaire">
+            <li class="bouton-secondaire bouton-petit"><a href="#"><i class="fas fa-user-plus"></i> Créer un compte</a></li>
+
+
+            <li><a href="#"><i class="fas fa-globe"></i> Langue</a></li>
+            <li><span>|</span></li>
+            <li><a href="#"><i class="fas fa-dollar-sign"></i> CAD</a></li>      
+        </ul>
+    </nav>
+
+    <!-- Navigation principale -->
+    <nav class="navigation-principale" aria-label="Navigation principale">
+        <a href="accueil.html">
+            <img width="125" src="assets/images/logo-stampee.png" alt="Logo Stampee - Plateforme d’enchères de timbres">
+        </a>
+        <ul>
+            <li>
+                <a href="#">Ventes aux enchères</a>
+                
+                <ul>
+                    <li><a href="#">Ventes à venir</a></li>
+                    <li><a href="#">Résultats</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Actualités philatéliques</a></li>
+            <li><a href="#">La philatélie, c’est la vie</a></li>
+        </ul>
+
+        <!-- Barre de recherche -->
+        <form class="search-form" role="search" action="recherche.html" method="GET">
+            <label for="search" class="visually-hidden">Rechercher</label>
+            <input type="search" id="search" name="q" placeholder="Rechercher une enchère..." aria-label="Rechercher une enchère" required>
+            <button type="submit" aria-label="Lancer la recherche">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </form>
+    </nav>
+
+
+<!-- Contenu principal -->
+<main class="contenu-principal">
+    <!-- Fil d'Ariane et retour -->
+    <header class="entete-fil-ariane">
+        <nav aria-label="Fil d'Ariane">
+            <ul class="fil-ariane">
+                <li>
+                    <a href="ventes-a-venir.html" aria-label="Retour à la page précédente">
+                        <i class="fas fa-arrow-left"></i> Retour
+                    </a>
+                </li>
+                <li>
+                    <span class="separator"> | </span>
+                </li>
+                <li>
+                    30 février 2025 | Vente Privée: Nicolas Cage 1964 - États-Unis Légende d’Hollywood: Une Exposition de vente en présentiel
+                </li>
+            </ul>
+        </nav>
+        <div class="navigation-suivante">
+            <a href="#" class="bouton-retour" aria-label="Retour à la collection précédente">
+                <i class="fas fa-chevron-left"></i> Précédent
+            </a>
+            <a href="#" class="bouton-retour" aria-label="Aller à la collection suivante">
+                Suivant <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+    </header><section class="fiche-enchere">
+        <article>
+            <div class="contenedor-galerie">
+                <!-- Galerie du produit -->
+                <section class="galerie-produit">
+                    <figure class="image-principale">
+                        <img class="image-produit" src="assets/images/timbres/NicolasCage1964-recto.png" alt="Timbre Autriche 1918 - N19">
+                        <button class="zoom-button" aria-label="Agrandir l'image">
+                            <i class="fas fa-search-plus"></i>
+                        </button>
+                    </figure>
+                    <div class="miniatures">
+                        <img src="assets/images/timbres/autriche-1918-N19-TimbreTB-verso.jpg" alt="Vue arrière du timbre" class="miniature" onclick="changeImage('assets/images/timbres/autriche-1918-N19-TimbreTB-verso.jpg')">
+                        <img src="assets/images/timbres/certificat-authenticite.jpg" alt="Certificat d'authenticité" class="miniature" onclick="changeImage('assets/images/timbres/certificat-authenticite.jpg')">
+                        <img src="assets/images/timbres/autriche-1918-N19-autre-angle.jpg" alt="Autre angle du timbre" class="miniature" onclick="changeImage('assets/images/timbres/autriche-1918-N19-autre-angle.jpg')">
+                        <img src="assets/images/timbres/detail-timbre.jpg" alt="Détail du timbre" class="miniature" onclick="changeImage('assets/images/timbres/detail-timbre.jpg')">
+                    </div>
+                </section>
+    
+                <!-- Détails du produit -->
+                <section class="details-produit">
+                    <h1>AUTRICHE 1918 # N19 TIMBRE TB</h1>
+                    <div class="estimation">
+                        <span>Estimation : CA$150 - CA$200</span>
+                    </div>
+                    <h2>Enchère actuelle (12 enchères)</h2>
+                    <p>USD 55,000</p>
+    
+                    <h2>Estimation</h2>
+                    <p>USD 30,000 - USD 50,000</p>
+    
+                    <p>Clôture : <strong>Dans 4 jours</strong></p>
+    
+                    <div class="actions">
+                        <button class="bouton-main-cta">Placer une enchère</button>
+                        <button class="bouton-secondaire">Suivre</button>
+                        <button class="bouton-secondaire">Partager</button>
+                    </div>
+    
+                    <p>Essayez notre <a href="#">calculateur de coûts</a></p>
+                </section>
+            </div>
+        </article>
+    </section>
+
+
+
+
+
+
+    
+    <section class="details-supplementaires">
+        <h3>Détails supplémentaires</h3>
+        <p>AUTRICHE 1918 # N19 TIMBRE TB</p>
+        <p>Émis sous occupation italienne, émission Armoiries, 3 kreuzer rose carmin. Le timbre est neuf avec charnière, sur papier granité et signé au verso. Catalogue Scott 890,00$ CAD.</p>
+        <h3>Pays d’origine</h3>
+        <p>Autriche</p>
+        <h3>Thématique</h3>
+        <p>Géographie et Tourisme</p>
+        <h3>Couleur</h3>
+        <p>Rouge</p>
+        <h3>Certifié</h3>
+        <p>Oui</p>
+        <h3>Condition</h3>
+        <p>Bonne</p>
+        <h3>Prix & enchères</h3>
+        <p>Enchères</p>
+    </section>
+
+    <!-- Autres produits -->
+    <section>
+        <h2>Enchères qui pourraient vous intéresser</h2>
+        <div class="grille">
+            <article class="carte-timbre">
+                <header>
+                    <div><a href="#">2.222</a></div>
+                    <img src="assets/images/timbres/NicolasCage1964-recto.png" alt="Nicolas Cage 1964 - États-Unis Légende d’Hollywood, Trésor mondial">
+                    <h3>Nicolas Cage 1964 - États-Unis Légende d’Hollywood, Trésor mondial</h3>
+                    <p>Il reste 18h 02m 00s</p>
+                </header>
+                <p>Enchère actuelle</p>
+                <p>$ 1.000.000</p>
+                <a href="#">Enchérir</a>
+            </article>
+        </div>
+    </section>
+</main>
+
+    <footer class="pied-de-page">
+        <nav>
+            
+        </nav>
+        <span>2025 Lord Reginald Stampee III</span>
+<a href="#">
+
+</a>
+    </footer>
+
+</body>
+</html>

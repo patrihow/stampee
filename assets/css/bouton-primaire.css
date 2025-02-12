@@ -1,0 +1,45 @@
+
+.bouton-primaire, .bouton-secondaire, .bouton-icone, .bouton-etiquette {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase; 
+    text-decoration: none; 
+    white-space: nowrap; 
+    border-radius: var(--radius-sharp); 
+    padding: 0.75rem 1rem; 
+    transition-duration: 0.15s; 
+    transition-property: color, background-color, border-color, box-shadow; 
+    transition-timing-function: cubic-bezier(0.39, 0.58, 0.57, 1); 
+    cursor: pointer; 
+}
+
+.bouton-primaire {
+    background-color: var(--color-accent-dore); 
+    color: var(--color-fond-clair); 
+}
+
+.bouton-secondaire {
+    background-color: var(--color-bleu-clair); 
+    color: var(--color-fond-clair); 
+}
+
+.bouton-primaire:hover, .bouton-secondaire:hover {
+    background-color: white; 
+}
+
+.bouton-petit {
+    padding: var(--spacing-micro) var(--spacing-thinnest);
+    font-size: var(--font-shortest); 
+}
+
+.bouton-moyen {
+    padding: 0.5rem 1rem; 
+    font-size: var(--font-current); 
+}
+
+.bouton-grand {
+    padding: 0.75rem 1.5rem; 
+    font-size: var(--font-tall); 
+}

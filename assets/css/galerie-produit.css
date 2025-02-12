@@ -1,0 +1,87 @@
+
+.contenedor-galerie {
+    display: flex; 
+}
+
+.galerie-produit {
+    flex: 0 0 60%; 
+    display: flex;
+    flex-direction: column; 
+    margin-right: var(--spacing-thin); 
+}
+
+.image-principale {
+    position: relative; 
+    margin-right: var(--spacing-nano); 
+}
+
+.image-produit {
+    max-width: 100%; 
+    height: auto; 
+}
+
+.zoom-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: var(--radius-sharp);
+    cursor: pointer;
+    padding: var(--spacing-nano);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.miniatures {
+    display: flex;
+    flex-direction: column; 
+    gap: var(--spacing-nano); 
+}
+
+.miniature {
+    cursor: pointer;
+    width: 80px; 
+    height: auto; 
+    border: 1px solid var(--color-border-line); 
+    border-radius: var(--radius-sharp); 
+    transition: transform 0.2s; 
+}
+
+.miniature:hover {
+    transform: scale(1.1); 
+}
+
+.details-produit {
+    flex: 0 0 40%; 
+    display: flex;
+    flex-direction: column; 
+}
+
+.actions {
+    display: flex;
+    gap: var(--spacing-nano); 
+}
+
+.bouton-main-cta {
+    background-color: var(--color-button-bleu);
+    color: white;
+    border: none;
+    padding: var(--spacing-micro) var(--spacing-thin);
+    border-radius: var(--radius-sharp);
+    cursor: pointer;
+}
+
+.bouton-secondaire {
+    background-color: var(--color-bleu-clair);
+    color: white;
+    border: none;
+    padding: var(--spacing-micro) var(--spacing-thin);
+    border-radius: var(--radius-sharp);
+    cursor: pointer;
+}
+
+.bouton-main-cta:hover, .bouton-secondaire:hover {
+    opacity: 0.8; 
+}
