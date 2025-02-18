@@ -1,0 +1,77 @@
+/* === BASE BUTTON STYLES === */
+.bouton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    border-radius: var(--radius-sharp);
+    padding: 0.75rem 1rem;
+    transition: all 0.15s cubic-bezier(0.39, 0.58, 0.57, 1);
+    cursor: pointer;
+    font-weight: 600;
+
+    background-color: white;
+}
+
+/* === PRIMARY BUTTON === */
+.bouton-primaire {
+    background-color: var(--color-bleu-royal);
+    color: var(--color-nav-background);
+    border: none;
+    width: 100%;
+    border-radius: var(--radius-sharp);
+    margin-bottom: 0.5rem;
+}
+
+.bouton-primaire:hover {
+    background-color: var(--color-bleu-clair);
+}
+
+/* === SECONDARY BUTTON === */
+.bouton-secondaire {
+    background-color: transparent;
+    color: var(--color-bleu-clair);
+    border: 2px solid var(--color-accent-dore);
+    border-radius: var(--radius-sharp);
+    width: 50%;
+    margin-bottom: 1rem;
+}
+
+.bouton-secondaire:hover {
+    background-color: var(--color-accent-dore);
+    color: var(--color-nav-background);
+}
+
+/* === BUTTON SIZES === */
+.bouton-small {
+    padding: var(--spacing-thinner);
+    font-size: var(--font-shortest);
+}
+
+.bouton-medium {
+    padding: var(--spacing-thinnest);
+    font-size: var(--font-current);
+}
+
+.bouton-large {
+    padding: var(--spacing-small);
+    font-size: var(--font-tall);
+}
+
+/* === BUTTON CONTAINER LAYOUT === */
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-thin);
+    width: 100%;
+}
+
+.actions-secondaires {
+    display: flex;
+    gap: var(--spacing-thin);
+    justify-content: space-between;
+    width: 100%;
+}

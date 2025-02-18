@@ -1,0 +1,101 @@
+
+.pied-de-page {
+    background-color: var(--couleur-fond);
+    color: var(--couleur-texte);
+    padding: 2rem 0;
+    border-top: 2px solid var(--color-accent-dore);
+}
+
+.conteneur {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* ========================= */
+/* Présentation Logo */
+/* ========================= */
+
+.presentation {
+    flex: 1;
+    min-width: 250px;
+}
+
+.logo {
+    width: 120px;
+    display: block;
+    margin-bottom: var(--espacement);
+}
+
+.description {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* ========================= */
+/* Navigation (Liens rapides) */
+/* ========================= */
+
+.navigation {
+    display: flex;
+    flex: 2;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--espacement);
+}
+
+.bloc {
+    min-width: 150px;
+}
+
+.titre {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.liste {
+    list-style: none;
+}
+
+.lien {
+    text-decoration: none;
+    color: var(--couleur-lien);
+    display: block;
+    padding: 0.3rem 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.lien:hover {
+    color: var(--couleur-lien-hover);
+}
+
+/* ========================= */
+/* Section Légale (Copyright & Conditions) */
+/* ========================= */
+
+.section-legale {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.copyright {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.liens-legaux {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 0.9rem;
+}
+
+.liens-legaux span {
+    color: rgba(255, 255, 255, 0.5);
+}

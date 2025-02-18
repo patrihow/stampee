@@ -28,12 +28,12 @@
     border: var(--border-slimmest) solid #BABBC1;
     border-radius: var(--radius-sharp);
     padding: var(--spacing-micro);
-    margin-right: var(--spacing-nano); 
     font-size: var(--font-shortest);
 }
 
 .search-form button {
     height: 40px;
+    width: 40px;
     background-color: var(--color-bleu-clair);
     color: white;
     border: none;

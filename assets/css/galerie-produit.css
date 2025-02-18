@@ -1,24 +1,28 @@
-
+/* Contenedor principal de la galería */
 .contenu-galerie {
-    display: flex; 
+    display: flex;
+    justify-content: center;
     padding: var(--spacing-thinner) var(--spacing-thinnest);
 }
+
+/* Galería del producto */
 .galerie-produit {
-    flex: 0 0 50%; 
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    flex: 0 0 50%;
 }
 
 .image-principale {
-    position: relative; 
-    margin-bottom: var(--spacing-thinnest); 
+    position: relative;
+    margin-bottom: var(--spacing-thinnest);
 }
 
 .image-produit {
-    max-width: 100%; 
-    height: auto; 
+    max-width: 100%;
+    height: auto;
 }
 
+/* Botón de zoom */
 .zoom-button {
     position: absolute;
     top: 10px;
@@ -26,57 +30,64 @@
     background: rgba(255, 255, 255, 0.7);
     border: none;
     border-radius: var(--radius-sharp);
-    cursor: pointer;
     padding: var(--spacing-nano);
+    cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Miniaturas de imágenes */
 .miniatures {
     display: flex;
-    gap: var(--spacing-thinner); 
+    gap: var(--spacing-thinner);
     justify-content: center;
-    padding-right: var(--spacing-thinner);
 }
 
 .miniature {
+    width: 100px;
+    height: auto;
+    border: 1px solid var(--color-border-line);
+    border-radius: var(--radius-sharp);
+    transition: transform 0.2s;
     cursor: pointer;
-    width: 100px; 
-    height: auto; 
-    border: 1px solid var(--color-border-line); 
-    border-radius: var(--radius-sharp); 
-    transition: transform 0.2s; 
     padding: var(--spacing-micro);
 }
 
 .miniature:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
+/* Detalles del producto */
 .details-produit {
-    flex: 0 0 40%; 
+    flex: 0 0 40%;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     color: var(--color-bleu-royal);
 }
 
-.actions {
-    display: flex;
-    gap: var(--spacing-nano); 
+.details-produit header {
+    border-bottom: var(--border-slimmest) solid var(--color-border-line);
+    padding-bottom: var(--spacing-thinner);
 }
+
+/* Títulos y textos */
 .details-produit h1 {
     text-transform: uppercase;
     font-family: var(--font-accent);
-    font-size: var(--font-taller);
-    margin-bottom: var(--spacing-nano); 
+    font-size: var(--font-tall);
+    margin-bottom: var(--spacing-nano);
+
 }
 
 .details-produit p {
-    margin-top: 0; 
-    margin-bottom: var(--spacing-small); 
+    margin-top: 0;
+    margin-bottom: var(--spacing-small);
+    font-size: var(--font-shorter);
 }
-.details-produit header {
-border-bottom: var(--border-slimmest) solid var(--color-border-line);
-padding-bottom: var(--spacing-thinner);
+
+/* Acciones */
+.actions {
+    display: flex;
+    gap: var(--spacing-nano);
 }

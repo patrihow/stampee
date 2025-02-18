@@ -4,9 +4,13 @@
 @import "entete-principale.css";
 @import "navigation-principale.css";
 @import "entete-fil-ariane.css";
-@import "bouton-primaire.css";
+@import "bouton.css";
 @import "contenu-principal.css";
 @import "grille.css";
 @import "fiche-enchere.css";
 @import "galerie-produit.css";
 @import "pied-de-page.css";
+@import "details-supplementaires.css";
+@import "details-produits.css";
+@import "carte.css";
+@import "encheres.css";

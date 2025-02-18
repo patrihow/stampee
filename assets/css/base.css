@@ -41,3 +41,39 @@ p {
 strong {
     font-weight: 600;
 }
+
+h1 {
+    font-family: var(--font-accent);
+    font-size: var(--font-tall);
+    margin-bottom: var(--spacing-thinner);
+    text-transform: uppercase;
+}
+h3 {
+    font-family: var(--font-base);
+    font-size: var(--font-current);
+}
+
+h2 {
+    font-size: var(--font-shorter);
+    margin-bottom: var(--spacing-micro);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: var(--spacing-small);
+    font-size: var(--font-shorter);
+    color: var(--color-texte);
+}
+.texte-small {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: var(--font-shortest);
+    color: var(--color-texte-gris);
+}
+.prix {
+    color: var(--color-accent-dore);
+    font-family: var(--font-accent);
+    font-size: var(--font-tall);
+}

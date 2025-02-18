@@ -6,10 +6,11 @@ Définition des styles de couleur et de rythme
     /* --- Palette de couleur ---*/
     --color-bleu-royal: #0F1A3A;
     --color-bleu-clair: #26428B;
-    --color-bleu-plus-clair: #516AC7;
+    --color-bleu-plus-clair: #3951a8;
     --color-accent-dore: #E3AF64;
     --color-beige-clair: #FAEBD6;
     --color-fond-clair: #F8F7F5;
+    --color-texte: #222;
 
     /* --- Liens ---*/
     --color-lien-fond-clair: #26428B;
@@ -21,6 +22,7 @@ Définition des styles de couleur et de rythme
     --color-nav-background: #F1F4FF;
     --color-button-bleu: #26428B;
     --color-border-line: #bfd0db;
+    --color-texte-gris: #4C6378;
 
     /* --- Font family ---*/
     --font-base: 'Montserrat', sans-serif;
