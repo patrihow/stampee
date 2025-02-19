@@ -31,8 +31,10 @@
 }
 
 .description {
-    font-size: 1.1rem;
+    font-size: var(--font-current);
     font-weight: bold;
+    font-family: var(--font-accent);
+    color: var(--color-bleu-royal);
 }
 
 /* ========================= */
@@ -85,11 +87,9 @@
     text-align: center;
     margin-top: 2rem;
     padding-top: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .copyright {
-    font-size: 0.9rem;
     margin-bottom: 0.5rem;
 }
 
@@ -97,9 +97,9 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-    font-size: 0.9rem;
+    font-size: var(--font-short);
 }
 
 .liens-legaux span {
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--color-nav-clair);
 }
