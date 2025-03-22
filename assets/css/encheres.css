@@ -1,3 +1,10 @@
-.encheres {
-    padding: var(--spacing-broad) var(--spacing-thin);
+[id="encheres"] {
+    flex-basis: 60ch;
+	flex-grow: 9;
+    
+}
+
+[id="encheres"]>*+* {
+    margin-top: var(--spacing-broad);
+
 }

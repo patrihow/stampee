@@ -1,0 +1,29 @@
+.enchere-estimation {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--spacing-thinner) 0px;
+}
+
+.enchere-actuelle {
+  flex: 1;
+  border-right: 1px solid var(--color-border-line);
+  padding-right: var(--spacing-thinner);
+}
+
+.estimation {
+  flex: 1;
+  padding-left: var(--spacing-thinner);
+}
+
+@media (max-width: 768px) {
+  .enchere-estimation {
+    flex-direction: column; 
+    align-items: flex-start;
+}
+
+.enchere-actuelle, .estimation {
+    border-right: none; 
+    padding: 0; 
+    margin-bottom: var(--spacing-thinner); 
+}
+}
