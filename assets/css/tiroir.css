@@ -60,7 +60,7 @@
 }
 
 details {
-	background-color: lightgrey;
+	background-color: transparent;
 
 	& > * {
 		padding: 10px;
@@ -75,7 +75,7 @@ details {
 
 
 	&[open] {
-		background-color: aqua;
+		background-color: transparent;
 		& div {
 			grid-template-rows: 1fr;
 		}

@@ -1,0 +1,32 @@
+.contenu-encheres {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.filtres-encheres {
+    margin-right: 20px; 
+    padding: var(--spacing-thinner);
+    background-color: var(--color-fond-clair);
+    border-radius: var(--radius-sharp);
+}
+
+.filter-item {
+    display: flex;
+    align-items: center;
+    margin: 8px 0; 
+}
+
+.filter-item input[type="checkbox"] {
+    margin-right: 10px; 
+}
+
+@media (max-width: 768px) {
+    .contenu-encheres {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+    .filtres-encheres {
+        width: 100%; 
+        margin-right: 0; 
+    }
+}
