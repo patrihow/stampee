@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Patricia Bravo" />
     <meta name="description" content="Plateforme d’enchères" />
-    <title>Connexion - Stampee</title>
+    <title>Accueil - Stampee</title>
 
     <!-- Typographies Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,7 +23,6 @@
 
     <!-- css -->
     <link rel="stylesheet" href="assets/css/main.css" />
-
     <!-- Javascript -->
     <script type="module" src="assets/js/main.js"></script>
   </head>
@@ -39,6 +38,7 @@
             ><i class="fas fa-user-plus"></i> Créer un compte</a
           >
         </li>
+
         <li>
           <a href="#"><i class="fas fa-globe"></i> Langue</a>
         </li>
@@ -113,101 +113,28 @@
       </form>
     </nav>
     <!-- Fin de la Navigation principale -->
-     
     <main class="contenu-principal">
-      <!-- Contenu Créer un compte start -->
-      <section class="login-page">
-        <div class="login-page-content">
-          <div class="logo-login">
-            <img src="assets/images/logo-stampee.png" alt="Logo Stampee" />
-          </div>
-          <h2 class="titres-secondaires">Découvrez de magnifiques collections</h2>
-          <p class="intro-texte">
-            Inscrivez-vous pour découvrir les nouvelles collections de timbres, les promotions et bien plus encore !
-          </p>
-    
-          <form class="login-form">
-            <label for="fullname">Nom et prénom</label>
-            <input
-              class="login-input"
-              type="text"
-              id="fullname"
-              name="fullname"
-              required
-              placeholder="Entrez votre nom et prénom"
-            />
-    
-            <label for="username">Nom d'utilisateur</label>
-            <input
-              class="login-input"
-              type="text"
-              id="username"
-              name="username"
-              required
-              placeholder="Entrez votre nom d'utilisateur"
-            />
-    
-            <label for="email">Email</label>
-            <input
-              class="login-input"
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="Entrez votre email"
-            />
-    
-            <label for="password">Mot de passe</label>
-            <input
-              class="login-input"
-              type="password"
-              id="password"
-              name="password"
-              required
-              placeholder="Entrez votre mot de passe"
-            />
-    
-            <label for="country">Pays</label>
-            <input
-              class="login-input"
-              type="text"
-              id="country"
-              name="country"
-              required
-              placeholder="Entrez votre pays"
-            />
-    
-            <label for="currency">Monnaie de préférence</label>
-            <input
-              class="login-input"
-              type="text"
-              id="currency"
-              name="currency"
-              required
-              placeholder="Entrez votre monnaie de préférence"
-            />
-    
-            <div class="terms">
-              <input type="checkbox" id="terms" name="terms" required />
-              <label for="terms">
-                J'accepte les Conditions d'utilisation et la Politique de confidentialité de Stampee, et je confirme que j'ai 18 ans ou plus.
-              </label>
-            </div>
-    
-            <p class="info-text">
-              Vous avez déjà un compte ? <a href="login.html">Se connecter</a>
-            </p>
-    
-            <div class="button-group">
-              <button type="submit" class="bouton btn-primaire btn-moyen">Créer un compte</button>
-              <button type="button" class="bouton btn-secondaire">Annuler</button>
-            </div>
-          </form>
-        </div>
-      </section>
-      <!-- Contenu Créer un compte ends -->
-    </main>
+        <!-- Contenu encheres.html start -->
+  <!-- Contenu entete-secondaire start -->
+        <header class="entete-secondaire">
+          <img src="assets/images/hero-3.webp" alt="Bureau avec timbres, lettres et loupe.">
+          <h1>Les trésors philatéliques à votre portée</h1>
+        </header>
+        <!-- Contenu entete-secondaire ends -->
 
+        <!-- Contenu sections-secondaires start -->
+<section class="contenu-page-secondaire">
+    <h1>Actualités Philatéliques</h1>
+    
+    <p>Bienvenue sur notre page d'actualités philatéliques. Ici, vous trouverez les dernières informations concernant les enchères de timbres, les événements à venir et les tendances du marché.</p>
+    <p>Nous sommes ravis d'annoncer notre prochaine vente aux enchères qui se tiendra le 15 mars 2025. Cette vente mettra en vedette des collections rares et précieuses de timbres du monde entier. Ne manquez pas cette occasion unique d'enrichir votre collection!</p>
+    <p>Pour plus d'informations sur les enchères, les conditions de participation et les catalogues, veuillez consulter notre site web ou nous contacter directement.</p>
+    <a class="bouton btn-secondaire" href="#">En savoir plus</a>
+</section>
+<!-- Contenu sections-secondaires ends -->
+
+
+        </main>
     <!-- Pied de page start -->
     <footer class="pied-de-page">
       <div class="conteneur">
@@ -273,5 +200,5 @@
       </div>
     </footer>
     <!-- Pied de page ends -->
-  </body>
+</body>
 </html>

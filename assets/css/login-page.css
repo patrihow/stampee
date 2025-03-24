@@ -40,22 +40,26 @@
   height: 45px;
 }
 
-.btn-login {
-  background-color: var(--color-bleu-royal);
-  color: white;
-  padding: var(--spacing-thinner);
-  font-size: var(--font-current);
-  border: none;
-  border-radius: var(--radius-sharp);
-  cursor: pointer;
-  transition: background-color 0.3s;
+.button-group {
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 20px;
 }
 
-.btn-login:hover {
-  background-color: var(--color-bleu-clair);
-}
 .info-text {
-    font-size: 0.9rem; 
-    color: var(--color-texte); 
-    margin-bottom: var(--spacing-thin); 
+  font-size: var(--font-shorter); 
+  color: var(--color-texte); 
+  margin-bottom: var(--spacing-thin); 
+  padding-top: var(--spacing-thinner);
+}
+.intro-texte {
+  font-size: var(--font-tall);
+  padding-bottom: var(--spacing-thinner);
+  line-height: var(--line-height-tighter);
+}
+.titres-secondaires {
+  font-size: var(--font-taller);
 }

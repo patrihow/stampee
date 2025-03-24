@@ -13,7 +13,7 @@
   margin-left: auto;
   justify-content: flex-end;
   align-items: center;
-  padding: var(--spacing-nano) 0px;
+  padding: var(--spacing-micro) var(--spacing-thinner);
 }
 
 .navigation-secondaire a {

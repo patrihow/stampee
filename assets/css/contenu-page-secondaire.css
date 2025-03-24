@@ -1,0 +1,13 @@
+.contenu-page-secondaire {
+    padding: var(--spacing-thin) var(--spacing-broadest);
+}
+
+.contenu-page-secondaire > h1 {
+    font-size: var(--font-taller);
+    color: var(--color-bleu-royal);
+}
+
+.contenu-page-secondaire > p {
+    font-size: var(--font-current);
+    padding-bottom: var(--spacing-thinner);
+}
